@@ -1,0 +1,16 @@
+hi yash
+Based on the provided context, the circular seems to be related to a system for managing inspections and defects, possibly for infrastructure projects. It involves steps like starting a joint inspection, selecting a project, adding defects, submitting inspections, and managing requests for extensions of time (EOT) for rectification. The system appears to use OTP authentication and allows for adding images and remarks to defect reports.
+Subject: Email to Sanjay Kumar
+
+Dear Sanjay,
+
+I hope this email finds you well.
+
+I am writing to you regarding [insert topic here]. [Explain the topic in detail].
+
+Please let me know if you have any questions or require further information.
+
+Thank you for your time and attention to this matter.
+
+Sincerely,
+[Your Name]
