@@ -2,13 +2,11 @@ import os
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding 
 from llama_index.core.settings import Settings
 
-# Set the embedding model (correct)
+# Set the embedding model
+Settings.chunk_size = 2046
+Settings.chunk_overlap = 80
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 Settings.llm = None
-
-# If you want an actual LLM, import and set it (optional)
-# from llama_index.llms.openai import OpenAI
-# Settings.llm = OpenAI(model="gpt-3.5-turbo")
 
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
 from llama_index.readers.file import PDFReader
@@ -24,7 +22,14 @@ def get_index(data, index_name):
         )
     return index
 
-pdf_path = os.path.join("data", "CircularMandatory.pdf")
-circular_pdf = PDFReader().load_data(file=pdf_path)
-circular_index = get_index(circular_pdf, "circular")
-circular_engine = circular_index.as_query_engine()
+# Load multiple PDFs
+pdf_dir = "data"
+pdf_files = [f for f in os.listdir(pdf_dir) if f.endswith(".pdf")]
+all_docs = []
+for pdf_file in pdf_files:
+    pdf_path = os.path.join(pdf_dir, pdf_file)
+    docs = PDFReader().load_data(file=pdf_path)
+    all_docs.extend(docs)
+
+multi_pdf_index = get_index(all_docs, "multi_pdf_index")
+multi_pdf_engine = multi_pdf_index.as_query_engine()

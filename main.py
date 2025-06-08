@@ -8,7 +8,7 @@ from note_engine import note_engine
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.agent import ReActAgent
 from prompts import new_prompt, instruction_str, context
-from pdf import circular_engine
+from pdf import multi_pdf_engine, pdf_files
 
 # Load .env and get API key
 load_dotenv()
@@ -34,10 +34,13 @@ tools = [
         ),
     ),
     QueryEngineTool(
-        query_engine=circular_engine, 
+        query_engine=multi_pdf_engine, 
         metadata=ToolMetadata(
-            name="circular_data",
-            description="this gives detailed information about the circular",
+            name="pdf_data",
+            description=(
+            "This gives detailed information about all PDFs in the data folder. "
+            f"The available PDFs are: {', '.join(pdf_files)}"
+        ),
         ),
     ),
 ]
