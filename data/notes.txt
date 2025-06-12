@@ -15,3 +15,8 @@ Thank you for your time and attention to this matter.
 Sincerely,
 [Your Name]
 Based on the provided context from CircularMandatory.pdf, the circular seems to be related to inspections, defects, and project selection, possibly within the context of NHAI (National Highways Authority of India).
+The user asked 'what is the first page about'. I need to ask the user which PDF they are referring to, as I have access to multiple PDFs.
+Circular1.pdf, page 2, contains information about L N Malviya Infra Project Pvt. Ltd., including their address, contact information, CIN number, and the names of Rajesh Kumar Sinha and Acting Team Leader cum Highway Engineer. It also includes information about Project Director, NHAI ,PITJ,Sasaram Bihar and Sh. R.K Bansal, The Engineer.
+Concurrent auditors are required to check the following data related to non-Fastag vehicle collections: Data generated through ERP software for a specified period, Deposits made in the bank, and Data of daily toll collections.
+Circular1.pdf is a letter from L N Malviya Infra Project Pvt. Ltd., signed by Rajesh Kumar Sinha, Acting Team Leader cum Highway Engineer. The letter is addressed to Project Director, NHAI, PITJ, Sasaram Bihar and Sh. R.K Bansal, The Engineer.
+Circular 5 directs the reader to take necessary action on priority and includes contact information for Ashvini Rai, GM(Tech.)/Project Director.
