@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+pandas
+llama-index
+google-generativeai
+huggingface-hub
+torch  # Required for HuggingFace embeddings
+transformers  # Optional but recommended for some llama-index operations
+scikit-learn  # Often required by LlamaIndex embedding models
+pypdf  # PDFReader inside llama-index requires this or PyMuPDF
